@@ -1,6 +1,4 @@
-import java.sql.SQLOutput;
-
-public class Main {
+public class Variables {
     public static void main(String[] args) {
         String name;
         int i = 15;
