@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Control-Flow/Control-Flow.iml" filepath="$PROJECT_DIR$/Control-Flow/Control-Flow.iml" />
       <module fileurl="file://$PROJECT_DIR$/JavaRivision.iml" filepath="$PROJECT_DIR$/JavaRivision.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strings/Strings.iml" filepath="$PROJECT_DIR$/Strings/Strings.iml" />
       <module fileurl="file://$PROJECT_DIR$/Variables/Variables.iml" filepath="$PROJECT_DIR$/Variables/Variables.iml" />
     </modules>
   </component>
