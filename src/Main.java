@@ -3,7 +3,7 @@ public class Main {
         int height = 5; // Height of the pyramid
 
         for (int i = 0; i < height; i++) {
-            System.out.print(i+1 + ": ");
+            System.out.print(i + 1 + ": ");
             for (int j = 0; j < height - i - 1; j++) {
                 System.out.print(" ");
             }
