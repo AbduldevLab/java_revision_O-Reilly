@@ -55,17 +55,17 @@ public class ControlFlow {
             System.out.println("Invalid Score.");
         }
 
-        System.out.println("-------switch statements--------");
+        System.out.println("-------Switch Statements--------");
         //switch statement
         switch(test){
             case 0:
-                System.out.println("failed");
+                System.out.println("Failed");
                 break;
             case 4:
                 System.out.println("Passed");
                 break;
             default:
-                System.out.println("You didnt take the exam");
+                System.out.println("You didn't take the exam");
                 break;
         }
 
