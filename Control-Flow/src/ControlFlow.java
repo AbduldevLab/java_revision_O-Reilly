@@ -48,6 +48,9 @@ public class ControlFlow {
         else if(test > 4 || test < 10){
             System.out.println("You have passed the class");
         }
+        else if(test == 4 && test == 3.5){
+            System.out.println("Pass by compensation.");
+        }
         else{
             System.out.println("Invalid Score.");
         }
@@ -65,5 +68,7 @@ public class ControlFlow {
                 System.out.println("You didnt take the exam");
                 break;
         }
+
+
     }
 }
