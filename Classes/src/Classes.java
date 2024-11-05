@@ -1,5 +1,15 @@
 public class Classes {
-    public static void main(String[] args) {
-        System.out.println("Hello class!");
+    private int id;
+    private String title;
+    private String firstName;
+    private String surname;
+    private String jobTitle;
+    private String department;
+
+    public void setId(int value){
+        id = value;
+    }
+    public int getId(){
+        return id;
     }
 }
