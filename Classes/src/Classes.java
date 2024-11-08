@@ -6,10 +6,41 @@ public class Classes {
     private String jobTitle;
     private String department;
 
-    public void setId(int id){
+    public Classes() {
+
+    }
+
+    public Classes(int id, String jobTitle) {
+        this.id = id;
+        this.jobTitle = jobTitle;
+    }
+
+    public Classes(int id, String title, String firstName, String surname, String jobTitle, String department) {
+        this.id = id;
+        this.title = title;
+        this.firstName = firstName;
+        this.surname = surname;
+        this.jobTitle = jobTitle;
+        this.department = department;
+    }
+
+    public String getMailingName(){
+        return title + " " + firstName + " " + surname;
+    }
+
+    public String getMailingName(boolean firstInitialOnly){
+        if (firstInitialOnly){
+            return title + " " + firstName.substring(0,1) +" " + surname;
+        }else{
+            return title + " " + surname;
+        }
+    }
+
+    public void setId(int id) {
         this.id = id;
     }
-    public int getId(){
+
+    public int getId() {
         return id;
     }
 
@@ -26,7 +57,11 @@ public class Classes {
     }
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
+        if (firstName.length() < 2) {
+            System.out.println("Error - first name must be at least 2 characters long.");
+        } else {
+            this.firstName = firstName;
+        }
     }
 
     public String getSurname() {
