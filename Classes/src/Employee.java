@@ -1,21 +1,22 @@
-public class Classes {
+public class Employee {
     private int id;
     private String title;
     private String firstName;
     private String surname;
     private String jobTitle;
     private String department;
+    //private ExpenseClaim[] claims;
 
-    public Classes() {
+    public Employee() {
 
     }
 
-    public Classes(int id, String jobTitle) {
+    public Employee(int id, String jobTitle) {
         this.id = id;
         this.jobTitle = jobTitle;
     }
 
-    public Classes(int id, String title, String firstName, String surname, String jobTitle, String department) {
+    public Employee(int id, String title, String firstName, String surname, String jobTitle, String department) {
         this.id = id;
         this.title = title;
         this.firstName = firstName;
