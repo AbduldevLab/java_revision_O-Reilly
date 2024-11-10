@@ -2,6 +2,7 @@ import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Calendar;
 import java.util.Date;
@@ -38,5 +39,10 @@ public class Main {
         System.out.println(theDateAndTime.format(DateTimeFormatter.ofPattern("yyyy-MM-dd hh:mm")));
         System.out.println(someTime);
 
+        LocalDate yesterday = LocalDate.now().minusDays(1);
+        LocalDate myBirthday = LocalDate.of(1986, 12, 12);
+        Period difference = Period.between(myBirthday, yesterday);
+        System.out.println("There are " + difference.getYears() + " years and "+
+                difference.getMonths() + " months, and " + difference.getDays()+" days between the two dates");
     }
 }
