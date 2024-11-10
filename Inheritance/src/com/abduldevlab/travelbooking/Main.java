@@ -35,6 +35,5 @@ public class Main {
 
         PlaneTicket planeTicket = new PlaneTicket();
         //planeTicket.setSeatNumber();
-        //
     }
 }
