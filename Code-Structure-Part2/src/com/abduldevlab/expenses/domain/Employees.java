@@ -24,7 +24,7 @@ public class Employees {
     public void printEmployees(){
         for(Employee e : employees){
             if(e != null)
-                System.out.println(e.getMailingName());
+                System.out.println(e);
         }
     }
 
