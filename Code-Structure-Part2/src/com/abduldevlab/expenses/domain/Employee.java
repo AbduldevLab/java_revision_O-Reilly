@@ -6,7 +6,7 @@ public class Employee {
     private String firstName;
     private String surname;
     private String jobTitle;
-    private String department;
+    private Department department;
     //private ExpenseClaim[] claims;
 
     public Employee() {
@@ -18,7 +18,7 @@ public class Employee {
         this.jobTitle = jobTitle;
     }
 
-    public Employee(int id, String title, String firstName, String surname, String jobTitle, String department) {
+    public Employee(int id, String title, String firstName, String surname, String jobTitle, Department department) {
         this.id = id;
         this.title = title;
         this.firstName = firstName;
@@ -81,5 +81,25 @@ public class Employee {
 
     public void setJobTitle(String jobTitle) {
         this.jobTitle = jobTitle;
+    }
+
+    public Department getDepartment() {
+        return department;
+    }
+
+    public void setDepartment(Department department) {
+        this.department = department;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", surname='" + surname + '\'' +
+                ", jobTitle='" + jobTitle + '\'' +
+                ", department=" + department +
+                '}';
     }
 }

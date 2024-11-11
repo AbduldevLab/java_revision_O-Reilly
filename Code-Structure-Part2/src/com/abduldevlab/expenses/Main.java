@@ -1,4 +1,5 @@
 package com.abduldevlab.expenses;
+import com.abduldevlab.expenses.domain.Department;
 import com.abduldevlab.expenses.domain.Employee;
 import com.abduldevlab.expenses.domain.Employees;
 
@@ -21,7 +22,7 @@ public class Main {
         Employees employees = new Employees(15);
         employees.addEmployee(employee1);
         employees.addEmployee(employee2);
-        employees.addEmployee(new Employee(3, "Mrs", "Susan", "Brown", "Director", "Finance"));
+        employees.addEmployee(new Employee(3, "Mrs", "Susan", "Brown", "Director", Department.MARKETING));
 
         employees.printEmployees();
 
