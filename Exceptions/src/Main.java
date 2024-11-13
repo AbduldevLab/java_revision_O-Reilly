@@ -13,14 +13,17 @@ public class Main {
         //Integer[] integereArray = new Integer[]{1, 2, 3, 4, 5};
 
         dividedByZero(4);
-        dividedByZero(0);
+        //dividedByZero(0);
 
-        LocalDate today = null;
-        if (today != null)
-            System.out.println(today.getMonth());
+//        LocalDate today = null;
+//        if (today != null)
+//            System.out.println(today.getMonth());
+//
+//        String hello = "Hello";
+//        Double value = Double.valueOf(hello);
 
-        String hello = "Hello";
-        Double value = Double.valueOf(hello);
+        User user1 = new User ("Jack", 5);
+        User user2 = new User("Abdul", -1);
 
     }
 }
