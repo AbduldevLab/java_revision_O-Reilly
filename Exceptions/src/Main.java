@@ -14,17 +14,19 @@ public class Main {
             URI uri = new URI("https://www.google.com");
             System.out.println("The uri was created");
         } catch (URISyntaxException e) {
-            System.out.println("The uri was not created");
+            //System.out.println("The uri was not created");
+            throw new IllegalArgumentException();
+        } catch (ArithmeticException e) {
+            System.out.println("Caught");
+        } finally {
+
+            System.out.println("This is final");
         }
     }
 
-    public static void createURIv2() {
+    public static void createURIv2() throws URISyntaxException {
 
-        try {
-            URI uri = new URI("-https://www.google.com");
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
-        }
+        URI uri = new URI("-https://www.google.com");
         //System.out.println("The uri was created");
 
     }
@@ -45,9 +47,21 @@ public class Main {
 //        String hello = "Hello";
 //        Double value = Double.valueOf(hello);
 
-        User user1 = new User("Jack", 5);
-        User user2 = new User("Abdul", 31);
-        createURI();
+        try {
+            User user1 = new User("Jack", 5);
+            User user2 = new User("Abdul", 201);
+        } catch (InvalidAgeException e) {
+            //throw new RuntimeException(e);
+            e.printStackTrace();
+        }
+
+        try {
+            createURI();
+        } catch (IllegalArgumentException e) {
+            System.out.println("the exception was caught");
+        }
+        //createURIv2();
+
 
     }
 }

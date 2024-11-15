@@ -5,9 +5,12 @@ public class User {
     private String name;
     private int age;
 
-    public User(String name, int age) {
+    public User(String name, int age) throws InvalidAgeException {
         if(age<0){
-            throw new IllegalArgumentException("Age cannot be negative");
+            throw new InvalidAgeException("Age cannot be negative");
+        }
+        if(age>200){
+            throw new InvalidAgeException("Age cannot be greater then 200");
         }
         this.name = name;
         this.age = age;

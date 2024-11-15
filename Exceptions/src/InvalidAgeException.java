@@ -1,4 +1,12 @@
-package PACKAGE_NAME;
+public class InvalidAgeException extends Exception{
 
-public class InvalidAgeException {
+    public InvalidAgeException(String message){
+        super(message);
+    }
+
+    public InvalidAgeException(){
+        super();
+    }
+
 }
+
